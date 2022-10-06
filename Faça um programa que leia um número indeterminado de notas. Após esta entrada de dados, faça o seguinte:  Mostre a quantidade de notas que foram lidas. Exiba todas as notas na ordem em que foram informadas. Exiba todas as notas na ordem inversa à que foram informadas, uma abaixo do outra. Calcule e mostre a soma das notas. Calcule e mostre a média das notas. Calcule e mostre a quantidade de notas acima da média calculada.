@@ -1,0 +1,24 @@
+notas = []
+
+for i in range (0,1000):
+  val = int(input('digite a nota: (digite 11 para parar) ' ))
+  if (val == 11):
+    break
+  else:
+    notas.append(val)
+quant = len(notas)
+print(f'Foram lidas {quant} notas')
+print('NOTAS: ', notas)
+reversa = notas[::-1]
+for i in reversa:
+  print(i)
+print(sum(notas))
+  
+media = sum(notas)/quant
+print('A MEDIA DAS NOTAS É: ', media)
+s = 0
+for i in notas:
+  media = media = sum(notas)/quant
+  if i > media:
+    s += 1
+print(f'{s} notas acima da media')
