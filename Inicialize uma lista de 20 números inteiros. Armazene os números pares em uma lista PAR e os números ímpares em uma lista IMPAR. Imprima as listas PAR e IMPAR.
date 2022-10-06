@@ -1,0 +1,16 @@
+from random import randint
+lista3 = []
+for i in range(0,20):
+ i = randint(0, 100)
+ lista3.append(i)
+print('LISTA COMPLETA: ', lista3)
+lista_par = []
+lista_impar = []
+posicao = 0
+for elemento in lista3:
+  if elemento % 2 == 0:
+    lista_par.append(elemento)
+  else:
+    lista_impar.append(elemento)
+print('LISTA PAR: ', lista_par)
+print('LISTA IMPAR: ', lista_impar)
